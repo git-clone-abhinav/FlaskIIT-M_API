@@ -14,8 +14,8 @@ def welcome():
 
 @app.route('/rankers/', methods=['GET'])
 def rankers():
-    if path.exists("rankers.csv"):
-        data = pd.read_csv('rankers.csv')
+    if path.exists("/home/pi/Desktop/FlaskIT-M_API/rankers.csv"):
+        data = pd.read_csv('/home/pi/Desktop/FlaskIT-M_API/rankers.csv')
         data = data.to_dict('records')
         return {'data' : data}, 200 #why this one ?
     else:
