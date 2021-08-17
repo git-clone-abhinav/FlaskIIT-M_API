@@ -12,12 +12,12 @@ api = Api(app)
 def welcome():
     return "Hello World!"
 
-@app.route('/rankers/')
+@app.route('/rankers/', methods=['GET'])
 def rankers():
-    if path.exists("ranks.txt"):
-        data = pd.read_csv('ranks.csv')
+    if path.exists("rankers.csv"):
+        data = pd.read_csv('rankers.csv')
         data = data.to_dict('records')
-        return {'data' : data}, 200
+        return {'data' : data}, 200 #why this one ?
     else:
         return "Resuls yet to be declared", 300
 
