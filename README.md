@@ -23,7 +23,7 @@ This idea got me so mesmerised that i wanted to do it so badly, I told it to the
 Our API checks for a file called `rankers.csv` in the root directory, if it finds the file it will return the json value from the CSV with a status code of `200`.If it did not find anything there, it will return a status code of `300` meaning `Result is yet to be Declared`.
 
 You can check our API [here](http://iot.ccnet.in:105/rankers).
-As for now, we are not getting a barring criteria for the no of request we get, so please be Mindfull and use it accordingly. 🥲
+As for now, we are not getting a barring criteria for the no of request we get, so please be Mindfull and use it accordingly. 🥺
 
 Also I'd love to thank [Sachin](https://github.com/thesachinsingh) 😀 for giving me a helping hand, its hard to find someone who knows the `init.d` and `netstat` in linux now a days, xD. 😜
 
