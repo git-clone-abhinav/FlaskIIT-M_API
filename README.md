@@ -1,5 +1,5 @@
 # FlaskIIT-M_API 😏
-In this project i will be making a webserver, hostied on my Raspberyy Pi, and will be making a Restfull API and then making some get requests to the api to fetch some data from a csv file
+In this project i will be making a webserver, hosted on my Raspberyy Pi, and will be making a Restful API, and then making some get requests to the api to fetch some data from a csv file
 
 ## Background: 😲
 So the Pichavaram Coding Club is having an event on 28th of August 2021, and the results of the contest have to be updated on our website.
