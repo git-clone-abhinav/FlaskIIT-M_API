@@ -29,8 +29,6 @@ Also I'd love to thank [Sachin](https://github.com/thesachinsingh) 😀 for givi
 
 Thanks
 
-Abhinav
-
-Secretary
-
+Abhinav\
+Secretary\
 Pichavaram Coding Club
