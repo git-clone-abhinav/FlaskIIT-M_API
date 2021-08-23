@@ -5,6 +5,7 @@ from flask_cors import CORS, cross_origin
 import os.path
 from os import path
 import pandas as pd
+import smtplib
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -22,9 +23,9 @@ def rankers():
     if path.exists("/home/pi/Desktop/FlaskIT-M_API/rankers.csv"):
         data = pd.read_csv('/home/pi/Desktop/FlaskIT-M_API/rankers.csv')
         data = data.to_dict('records')
-        return {'data' : data}, 200 #why this one ?
+        return {'data' : data}, 200 # Everything Okay Data is returned
     else:
-        return "Resuls yet to be declared", 300
+        return "Resuls yet to be declared", 204 # rankers.csv file not found, therefore sending "No Content" response
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=105)
